@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2e2d2d;
+}
+.social{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.social a{
+    text-decoration: none;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: 3px solid #f0f0f0;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.social a:hover:first-child{
+    color: #ee2a7b;
+    border: 3px solid #ee2a7b;
+    box-shadow: 0 0 25px #ee2a7b;
+}
+.social a:hover:nth-child(3){
+    color: #25d366;
+    border: 3px solid #25d366;
+    box-shadow: 0 0 25px #25d366;
+}
+.social a:hover:nth-child(2){
+    color: #1da1f2;
+    border: 3px solid #1da1f2;
+    box-shadow: 0 0 25px #1da1f2;
+}
+.social a:hover:nth-child(4){
+    color: #086fff;
+    border: 3px solid #086fff;
+    box-shadow: 0 0 25px #086fff;
+}
+.social a:hover:last-child{
+    color: #ff0000;
+    border: 3px solid #ff0000;
+    box-shadow: 0 0 25px #ff0000;
+}
+/* Responsive Styles */
+
+/* For screens 1024px and below */
+@media (max-width: 1024px) {
+    .social {
+        gap: 16px;
+    }
+    .social a {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+    }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+    .social {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .social a {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+    }
+}
+
+/* For screens 320px and below */
+@media (max-width: 320px) {
+    .social {
+        gap: 12px;
+    }
+    .social a {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
